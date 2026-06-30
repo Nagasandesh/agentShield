@@ -76,7 +76,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="AgentShield - AI Agent Security Tester")
     parser.add_argument(
         "--agent", type=str, default="mock",
-        choices=["mock", "claude","hr", "health", "banking", "ecommerce", "automotive"],
+        choices=["mock", "claude", "hr", "health", "automotive"],
         help="Type of agent to test (default: mock)"
     )
     parser.add_argument(
