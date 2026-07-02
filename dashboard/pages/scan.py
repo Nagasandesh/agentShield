@@ -195,7 +195,7 @@ if run_btn:
         col1, col2 = st.columns(2)
 
         with col1:
-            with open(json_path, "r") as f:
+            with open(json_path, "r", encoding="utf-8") as f:
                 st.download_button(
                     "⬇️ Download JSON Report",
                     data=f.read(),
@@ -205,7 +205,7 @@ if run_btn:
                 )
 
         with col2:
-            with open(html_path, "r") as f:
+            with open(html_path, "r", encoding="utf-8") as f:
                 st.download_button(
                     "⬇️ Download HTML Report",
                     data=f.read(),

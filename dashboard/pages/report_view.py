@@ -125,7 +125,7 @@ else:
     col1, col2 = st.columns(2)
 
     with col1:
-        with open(report["_filepath"], "r") as f:
+        with open(report["_filepath"], "r", encoding="utf-8") as f:
             st.download_button(
                 "⬇️ Download JSON Report",
                 data=f.read(),
