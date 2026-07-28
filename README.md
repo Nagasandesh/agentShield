@@ -17,24 +17,6 @@ AgentShield fills this gap by bringing structured penetration testing principles
 
 ---
 
-## 🏗️ Architecture
-┌─────────────────────────────────────────────────────────┐
-│                    AgentShield Framework                 │
-│                                                         │
-│  ┌──────────┐    ┌──────────────┐    ┌───────────────┐  │
-│  │  Attack   │───▶│  Agent Under │───▶│   Response    │  │
-│  │ Simulator │    │    Test      │    │   Analyzer    │  │
-│  └──────────┘    └──────────────┘    └───────────────┘  │
-│        │                                      │          │
-│        ▼                                      ▼          │
-│  ┌──────────┐                        ┌───────────────┐  │
-│  │  Attack  │                        │  Risk Report  │  │
-│  │  Library │                        │  Generator    │  │
-│  └──────────┘                        └───────────────┘  │
-└─────────────────────────────────────────────────────────┘
-
----
-
 ## ⚔️ Attack Categories
 
 | Category | Attacks | Description |
