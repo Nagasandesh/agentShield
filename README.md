@@ -87,10 +87,10 @@ streamlit run dashboard/app.py
 ```
 
 Open browser at `http://localhost:8501`
-
 ---
 
 ## 📊 Sample Output
+```text
 🛡️  AgentShield — AI Agent Security Tester
 [1/4] Connecting to agent: HR
 ✅ Connected successfully
@@ -102,6 +102,7 @@ Open browser at `http://localhost:8501`
 [4/4] Generating reports...
 📄 JSON Report : reports/agentshield_hr_20260630.json
 🌐 HTML Report : reports/agentshield_hr_20260630.html
+
 =======================================================
 🔍 SCAN SUMMARY
 Total Attacks Run : 11
@@ -110,48 +111,48 @@ Total Attacks Run : 11
 🟡 MEDIUM          : 3
 🟢 LOW             : 0
 ✅ SAFE            : 5
-
+```
 ---
 
 ## 📁 Project Structure
-
-agentshield/
+ ```text
+agentshield/  
 │
 ├── target_agent/              # Agent connectors
-│   ├── base_connector.py      # Abstract base class
-│   ├── claude_connector.py    # Claude API connector
-│   └── mock_connector.py      # Offline mock agent
-│
-├── attacks/                   # Attack modules
-│   ├── prompt_injection/      # Direct injection attacks
-│   ├── tool_misuse/           # Tool misuse attacks
-│   └── domain_specific/       # Industry specific attacks
-│       ├── hr_attacks.py
-│       ├── health_attacks.py
-│       └── automotive_attacks.py
-│
-├── analyzer/                  # Response analysis
-│   └── risk_classifier.py     # CRITICAL/HIGH/MEDIUM/LOW/SAFE
-│
-├── reporter/                  # Report generation
-│   ├── json_report.py         # Machine readable output
-│   └── html_report.py         # Visual dashboard report
-│
-├── dashboard/                 # Streamlit UI
-│   ├── app.py                 # Home page
-│   └── pages/
-│       ├── scan.py            # Run attacks with live progress
-│       └── report_view.py     # Browse past reports
-│
-├── sample_agents/             # Simulated enterprise agents
-│   ├── hr_agent.py
-│   ├── health_agent.py
-│   └── automotive_agent.py
-│
-├── main.py                    # CLI entry point
-├── comparative_scan.py        # Multi model comparison
-└── requirements.txt
-
+│   ├── base_connector.py      # Abstract base class  
+│   ├── claude_connector.py    # Claude API connector  
+│   └── mock_connector.py      # Offline mock agent  
+│  
+├── attacks/                   # Attack modules  
+│   ├── prompt_injection/      # Direct injection attacks   
+│   ├── tool_misuse/           # Tool misuse attacks  
+│   └── domain_specific/       # Industry specific attacks  
+│       ├── hr_attacks.py  
+│       ├── health_attacks.py  
+│       └── automotive_attacks.py  
+│  
+├── analyzer/                   # Response analysis  
+│    └── risk_classifier.py     # CRITICAL/HIGH/MEDIUM/LOW/SAFE  
+│  
+├── reporter/                  # Report generation  
+│   ├── json_report.py         # Machine readable output   
+│   └── html_report.py         # Visual dashboard report  
+│  
+├── dashboard/                 # Streamlit UI   
+│   ├── app.py                 # Home page  
+│   └── pages/  
+│       ├── scan.py            # Run attacks with live progress  
+│       └── report_view.py     # Browse past reports  
+│  
+├── sample_agents/             # Simulated enterprise agents  
+│   ├── hr_agent.py   
+│   ├── health_agent.py  
+│   └── automotive_agent.py    
+│  
+├── main.py                    # CLI entry point      
+├── comparative_scan.py        # Multi model comparison    
+└── requirements.txt  
+```
 ---
 
 ## 🔍 Risk Classification
@@ -194,8 +195,8 @@ agentshield/
 Salesforce Developer | AI Security Enthusiast
 IBM | Bengaluru, India
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/YOUR_USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nagasandesh-n-09/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/Nagasandesh)
 
 ---
 
